@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <div class="w-screen py-10 px-32 inline-grid grid-cols-2"><!-- Navbar desktop -->
+    <div class="max-w-screen-xl m-auto py-10 grid grid-cols-2"><!-- Navbar desktop -->
         <div class="logo">
           <img src="assets/images/logo.svg" alt="logo">
         </div>
@@ -33,19 +33,19 @@
     </div>
   </header>
   <main><!-- Conteúdo Principal -->
-    <div class="w-screen px-32 grid grid-cols-12"><!-- destaques -->
+    <div class="max-w-screen-xl m-auto grid grid-cols-12"><!-- destaques -->
       <section class="sm:col-span-12 lg:col-span-8 sm:relative"><!-- conteudo destaque-->
-        <div class=""><!-- imagem destaque -->
-          <img src="assets/images/image-web-3-desktop.jpg" alt="Image web desktop">
+        <div class="h-64 object-cover"><!-- imagem destaque -->
+          <img src="assets/images/image-web-3-desktop.jpg" alt="Image web desktop" class="w-full h-full">
         </div>
         <div class="grid sm:grid-cols-1 lg:grid-cols-2 "><!-- conteúdos destaque-->
-          <div class="mt-8"><!-- Titulo -->
-            <h1 class="sm:text-5xl xl:text-6xl text-gray-900 font-bold sm:text-center">
-              The bright future of Web 3.0?
+          <div class="mt-4"><!-- Titulo -->
+            <h1 class="sm:text-5xl xl:text-[4rem] xl:text-left text-gray-900 font-bold sm:text-center">
+              The bright Future of Web 3.0?
             </h1>
           </div>
-          <div class="px-7 mt-8 relative"><!-- parágrafo -->
-            <p class="text-gray-400 text-justify sm:text-lg lg:text-base">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promisse?</p>
+          <div class="mt-4 relative"><!-- parágrafo -->
+            <p class="text-gray-400 text-justify sm:text-lg lg:text-base xl:pt-3">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promisse?</p>
             <div class="sm:text-center lg:text-start xl:absolute xl:bottom-0"><!-- Button action -->
               <button class="sm:mt-6 px-8 py-3 bg-red-500 text-white text-sm font-bold uppercase tracking-[.25em] hover:bg-red-600">
                 Read More
@@ -89,21 +89,21 @@
         </div>
       </section>
     </div>
-    <div class="w-screen pt-12 px-32 grid grid-cols-12"><!-- noticias de tecnologias -->
-      <section class="col-start-1 col-end-5">
-          <div class="flex"><!-- noticia tec. 1 -->
-              <div class="align-items-center"><!-- imagem tec. 1 -->
-                <img src="assets/images/image-retro-pcs.jpg" alt="retro">
+    <div class="max-w-screen-xl m-auto mt-14 grid grid-cols-12"><!-- noticias de tecnologias -->
+      <section class="max-lg:col-span-12 xl:col-span-4">
+          <div class="grid grid-cols-12 max-lg:h-40 xl:h-28"><!-- noticia tec. 1 -->
+              <div class="max-lg:col-span-2 xl:col-span-3 max-lg:h-40 xl:h-28">
+                <img src="assets/images/image-retro-pcs.jpg" alt="retro" class="w-full h-full">
               </div>
-              <div><!-- conteudo tec. 1 -->
-                <div><!-- indice -->
-                  <span>01</span>
+              <div class="max-lg:col-span-10 xl:col-span-8 px-6"><!-- conteudo tec. 1 -->
+                <div class="max-lg:text-4xl xl:text-3xl font-bold text-gray-300"><!-- indice -->
+                  <span>01</span><!-- Indice -->
                 </div>
                 <div><!-- Titulo tec. 01 -->
-                  <h2>Reviving Retro PCs</h2>
+                  <h2 class="font-bold py-1.5 max-lg:text-xl">Reviving Retro PCs</h2>
                 </div>
                 <div><!-- Texto tec. 01 -->
-                  <p>What happens when old PCs are given modern upgrades?</p>
+                  <p class="max-lg:text-lg xl:text-sm text-justify text-gray-400 max-w-[24ch] -tracking-[.02rem]">What happens when old PCs are given modern upgrades?</p>
                 </div>
               </div>
           </div>
